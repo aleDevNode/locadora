@@ -5,7 +5,7 @@ const bcrypt = require('bcrypt')
 module.exports = {
   up: async (queryInterface, Sequelize) => {
       await queryInterface.bulkInsert('users', [{
-        name: 'Gideon',
+        name: 'Alessandro Barbosa Vitorio',
         email: process.env.USER_EMAIL,
         login: process.env.USER_LOGIN,
         password: bcrypt.hashSync(process.env.USER_PASS,10),

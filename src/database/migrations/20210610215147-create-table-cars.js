@@ -18,18 +18,20 @@ module.exports = {
         type: Sequelize.STRING(45),
         allowNull: false,
       },
-      cnh: {
-        type: Sequelize.STRING(45),
-        allowNull: false,
+      model: {
+        type: Sequelize.STRING,
+        allowNull:false
       },
+      type: {
+        type: Sequelize.STRING,
+        allowNull:false
+      },
+    
       plate: {
         type: Sequelize.STRING(45),
         allowNull: false,
       },
-      odometer: {
-        type: Sequelize.INTEGER,
-        allowNull: false,
-      },
+     
       year: {
         type: Sequelize.INTEGER,
         allowNull: false,
@@ -38,6 +40,7 @@ module.exports = {
         type: Sequelize.INTEGER,
         allowNull: false,
       },
+      
       models_id:{
         type: Sequelize.INTEGER,
         allowNull: false,

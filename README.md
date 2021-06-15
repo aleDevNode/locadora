@@ -14,7 +14,7 @@
 ### Variaveis de ambiente
  ``` 
 - DB_HOST=
-- DB_PAS=
+- DB_PASS=
 - DB_USER=
 - DB_DATABASE=
 - DB_DIALECT=

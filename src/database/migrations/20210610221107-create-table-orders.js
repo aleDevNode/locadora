@@ -21,6 +21,10 @@ module.exports = {
         type: Sequelize.DATE,
         allowNull: false,
       },
+      odometer: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+      },
       
       type_payment: {
         type: Sequelize.STRING(45),
