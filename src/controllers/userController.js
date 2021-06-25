@@ -5,7 +5,7 @@ const {User} = require('../models')
 const usersController = {
 
     index: async (req,res) =>{
-        
+       console.log(req.token);
         try {
             const user = await User.findAll({
                 attributes:{

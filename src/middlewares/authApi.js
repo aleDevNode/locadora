@@ -8,9 +8,9 @@ const authApi = {
         if(authToken != undefined) {
             const bearer = authToken.split(" ")
             const token = bearer[1]
-
             try {
                 const user = await jwt.verify(token, jwtPass)
+               
                 if(!user) return res.status(401).json({msg: "token invalid"})
                 req.token = token
                 req.user = user
