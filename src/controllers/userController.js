@@ -1,11 +1,10 @@
 const bcrypt = require('bcrypt') 
-const { password } = require('../config/database')
 const {User} = require('../models')
 
 const usersController = {
 
     index: async (req,res) =>{
-       console.log(req.token);
+      
         try {
             const user = await User.findAll({
                 attributes:{
