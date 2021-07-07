@@ -40,7 +40,7 @@ module.exports = {
 })
   return {token}
     } catch (error) {
-      return error
+      throw error
     }
 
 
