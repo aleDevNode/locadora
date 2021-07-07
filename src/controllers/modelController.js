@@ -14,16 +14,7 @@ const modelController = {
 
             return res.status(400).json(error)
         }
-    },
-    create: async (req,res) =>{
-
-    },
-    update: async (req,res) =>{
-
-    },
-    delete: async (req,res) =>{
-
-    },
+    }
 
 }
 
